@@ -1,6 +1,7 @@
 package unit;
 
 import org.junit.Test;
+import marsrover.Plateau;
 
 public class PlateauTest {
 
