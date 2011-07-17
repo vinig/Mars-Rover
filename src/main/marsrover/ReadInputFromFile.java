@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class ReadInputFromFile {
+
     public ArrayList<String> readFile(String fileName) throws IOException{
         ArrayList<String> fileInputData = new ArrayList<String>();
         String line;
