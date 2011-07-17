@@ -75,7 +75,7 @@
       <file leaf-file-name="RoverTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/unit/RoverTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="0" selection-start="2632" selection-end="2632" vertical-scroll-proportion="0.0">
+            <state line="15" column="4" selection-start="322" selection-end="737" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,22 +101,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlateauTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/unit/PlateauTest.java">
+      <file leaf-file-name="RoverOnPlateauTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/integration/RoverOnPlateauTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
+            <state line="18" column="47" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadInputFromFileTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/unit/ReadInputFromFileTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="50" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadInputFromFile.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/marsrover/ReadInputFromFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="5" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataParserTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/unit/DataParserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="7" selection-start="1691" selection-end="1691" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataParser.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/marsrover/DataParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="0" selection-start="20" selection-end="20" vertical-scroll-proportion="0.07322654">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoverOnPlateauTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/integration/RoverOnPlateauTest.java">
+      <file leaf-file-name="Input.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Input.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="47" selection-start="537" selection-end="537" vertical-scroll-proportion="0.6695843">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="5" column="0" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -142,7 +184,12 @@
         <option value="$PROJECT_DIR$/src/test/unit/PlateauTest.java" />
         <option value="$PROJECT_DIR$/src/test/integration/RoverOnPlateauTest.java" />
         <option value="$PROJECT_DIR$/src/main/marsrover/Rover.java" />
+        <option value="$PROJECT_DIR$/src/test/unit/ReadInputFromFileTest.java" />
+        <option value="$PROJECT_DIR$/src/main/marsrover/ReadInputFromFile.java" />
+        <option value="$PROJECT_DIR$/Input.txt" />
         <option value="$PROJECT_DIR$/src/test/unit/RoverTest.java" />
+        <option value="$PROJECT_DIR$/src/test/unit/DataParserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/marsrover/DataParser.java" />
       </list>
     </option>
   </component>
@@ -326,6 +373,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MarsRoverProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mars-Rover" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Favorites" />
@@ -359,63 +420,7 @@
       <recent name="marsrover" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.integration in MarsRoverProject">
-    <configuration default="false" name="RoverTest.giveRoverMultipleInstructions" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false">
-        <pattern>
-          <option name="PATTERN" value="unit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="MarsRoverProject" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="unit" />
-      <option name="MAIN_CLASS_NAME" value="unit.RoverTest" />
-      <option name="METHOD_NAME" value="giveRoverMultipleInstructions" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="RoverTest.shouldReturnFinalPositionOfRover" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false">
-        <pattern>
-          <option name="PATTERN" value="unit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="MarsRoverProject" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="unit" />
-      <option name="MAIN_CLASS_NAME" value="unit.RoverTest" />
-      <option name="METHOD_NAME" value="shouldReturnFinalPositionOfRover" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.DataParserTest">
     <configuration default="false" name="RoverTest.makeRoverJumpStep" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
@@ -486,6 +491,62 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ReadInputFromFileTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="unit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="MarsRoverProject" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="unit" />
+      <option name="MAIN_CLASS_NAME" value="unit.ReadInputFromFileTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DataParserTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="unit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="MarsRoverProject" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="unit" />
+      <option name="MAIN_CLASS_NAME" value="unit.DataParserTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -619,11 +680,11 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.RoverTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.RoverTest.giveRoverMultipleInstructions" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.RoverTest.shouldReturnFinalPositionOfRover" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.RoverTest.makeRoverJumpStep" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.unit in MarsRoverProject" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.integration in MarsRoverProject" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.RoverTest.makeRoverJumpStep" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.unit in MarsRoverProject" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.integration in MarsRoverProject" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ReadInputFromFileTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.DataParserTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -677,7 +738,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2495935" sideWeight="0.7511592" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24884081" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24884081" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -782,13 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/cucumber/features/marsRover.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/marsrover/RoverException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="52" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0787037">
@@ -803,13 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/marsrover/Rover.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="6" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/marsrover/Plateau.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="16" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0">
@@ -817,21 +864,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/unit/RoverTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/cucumber/features/marsRover.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="2632" selection-end="2632" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/integration/RoverOnPlateauTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="47" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/integration/RoverOnPlateauTest.java">
+    <entry file="file://$PROJECT_DIR$/Input.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="47" selection-start="537" selection-end="537" vertical-scroll-proportion="0.6695843">
+        <state line="5" column="0" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/unit/ReadInputFromFileTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="50" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/unit/RoverTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="4" selection-start="322" selection-end="737" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/tw-req/jars/junit-4.8.1.jar!/org/hamcrest/CoreMatchers.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="46" selection-start="383" selection-end="383" vertical-scroll-proportion="0.35338345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/marsrover/ReadInputFromFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="5" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/marsrover/Rover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="6" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/unit/DataParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="7" selection-start="1691" selection-end="1691" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/marsrover/DataParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="20" selection-end="20" vertical-scroll-proportion="0.07322654">
+          <folding />
         </state>
       </provider>
     </entry>
