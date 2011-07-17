@@ -1,5 +1,6 @@
 package unit;
 
+import marsrover.Rover;
 import org.junit.Test;
 import marsrover.Plateau;
 import static org.hamcrest.CoreMatchers.is;
@@ -13,7 +14,7 @@ public class PlateauTest {
         int y_coordinate = 5;
         Plateau plateau = new Plateau();
         plateau.initializePlateau(x_coordinate, y_coordinate);
-        int coordinates[] = plateau.getCoordinates();
+        int coordinates[] = plateau.getUpperBoundCoordinates();
         assertThat(coordinates[0], is(x_coordinate));
         assertThat(coordinates[1], is(y_coordinate));
     }

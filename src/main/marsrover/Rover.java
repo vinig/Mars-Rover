@@ -3,6 +3,8 @@ package marsrover;
 public class Rover {
     private int[] coordinates = new int[2];
     private String direction;
+    private int[] upperBoundCoordinatesOfPlateau = new int[2];
+    private int[] lowerBoundCoordinatesOfPlateau = new int[2];
 
     public Rover(int x_coordinate, int y_coordinate, String direction) {
         this.coordinates[0] = x_coordinate;
@@ -26,6 +28,7 @@ public class Rover {
     public void readInstructions(String instructions) {
         String singleInstruction;
         for (int index = 0; index < instructions.length(); index++ ){
+            checkBounds();
             singleInstruction = instructions.substring(index, index+1).toUpperCase();
             if (singleInstruction.equals("L")){
                 turnLeft();
@@ -106,9 +109,35 @@ public class Rover {
         }
     }
 
-    public String getFinalOutput() {
+    public String giveFinalPositionOfRover() {
         int coordinates[] = getCoordinates();
-        String finalOutput = coordinates[0]+" "+coordinates[1]+" "+getDirection();
-        return finalOutput;
+        return (coordinates[0]+" "+coordinates[1]+" "+getDirection());
+    }
+
+
+
+    public boolean checkBounds(){
+        checkXBounds(upperBoundCoordinatesOfPlateau[0],lowerBoundCoordinatesOfPlateau[0]);
+        checkYBounds(upperBoundCoordinatesOfPlateau[1],lowerBoundCoordinatesOfPlateau[1]);
+        return true;
+    }
+
+    private boolean checkYBounds(int upper_y_coordinate, int lower_y_coordinates) {
+        if (coordinates[1] > upper_y_coordinate || coordinates[1] < lower_y_coordinates){
+            throw new RoverException("Rover is out of Bound in N/S direction");
+        }
+        return true;
+    }
+
+    private boolean checkXBounds(int upper_x_coordinate, int lower_x_coordinates) {
+        if (coordinates[0] > upper_x_coordinate || coordinates[0] < lower_x_coordinates ){
+            throw new RoverException("Rover is out of Bound in E/W direction");
+        }
+        return true;
+    }
+
+    public void getPlateauCoordinates(Plateau plateau) {
+        upperBoundCoordinatesOfPlateau =  plateau.getUpperBoundCoordinates();
+        lowerBoundCoordinatesOfPlateau = plateau.getLowerBoundCoordinates();
     }
 }

@@ -1,11 +1,29 @@
 package unit;
 
+
+import marsrover.Plateau;
 import marsrover.Rover;
+import org.junit.Before;
 import org.junit.Test;
+import org.mockito.MockitoAnnotations;
+
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.mockito.Mockito.when;
 
 public class RoverTest {
+
+    @MockitoAnnotations.Mock
+    private Plateau plateau;
+
+    @Before
+    public void setUp(){
+        MockitoAnnotations.initMocks(this);
+        int upperCoordinatesOfPlateau[] = {5,5};
+        int lowerCoordinatesOfPlateau[] = {0,0};
+        when(plateau.getUpperBoundCoordinates()).thenReturn(upperCoordinatesOfPlateau);
+        when(plateau.getLowerBoundCoordinates()).thenReturn(lowerCoordinatesOfPlateau);
+    }
 
     @Test
     public void shouldInitializeRoverPositionOneTwoNorth() {
@@ -31,6 +49,7 @@ public class RoverTest {
     @Test
     public void turnRoverLeftTwice(){
         Rover rover = new Rover(1, 2 ,"N");
+        rover.getPlateauCoordinates(plateau);
         rover.readInstructions("LL");
         String roverDirection = rover.getDirection();
         assertThat(roverDirection, is("S"));
@@ -39,6 +58,7 @@ public class RoverTest {
     @Test
     public void turnRoverLeftThrice(){
         Rover rover = new Rover(1, 2 ,"N");
+        rover.getPlateauCoordinates(plateau);
         rover.readInstructions("LLL");
         String roverDirection = rover.getDirection();
         assertThat(roverDirection, is("E"));
@@ -55,6 +75,7 @@ public class RoverTest {
     @Test
     public void turnRoverRightTwice(){
         Rover rover = new Rover(1, 2 ,"N");
+        rover.getPlateauCoordinates(plateau);
         rover.readInstructions("RR");
         String roverDirection = rover.getDirection();
         assertThat(roverDirection, is("S"));
@@ -63,6 +84,7 @@ public class RoverTest {
     @Test
     public void turnRoverRightFourTimes(){
         Rover rover = new Rover(1, 2 ,"N");
+        rover.getPlateauCoordinates(plateau);
         rover.readInstructions("RRRR");
         String roverDirection = rover.getDirection();
         assertThat(roverDirection, is("N"));
@@ -79,6 +101,7 @@ public class RoverTest {
     @Test
     public void makeRoverJumpTwoSteps(){
         Rover rover = new Rover(1, 2, "N");
+        rover.getPlateauCoordinates(plateau);
         rover.readInstructions("MM");
         int coordinates[] = rover.getCoordinates();
         assertThat(coordinates[1], is(4));
@@ -87,6 +110,7 @@ public class RoverTest {
     @Test
     public void makeRoverTurnLeftAndJumpStep(){
         Rover rover = new Rover(1, 2, "N");
+        rover.getPlateauCoordinates(plateau);
         rover.readInstructions("LM");
         int coordinates[] = rover.getCoordinates();
         String roverDirection = rover.getDirection();
@@ -97,6 +121,7 @@ public class RoverTest {
     @Test
     public void makeRoverTurnRightAndJumpStep(){
         Rover rover = new Rover(1, 2, "N");
+        rover.getPlateauCoordinates(plateau);
         rover.readInstructions("RM");
         int coordinates[] = rover.getCoordinates();
         String roverDirection = rover.getDirection();
@@ -107,6 +132,7 @@ public class RoverTest {
     @Test
     public void makeRoverTurnRightTwiceAndJumpStep(){
         Rover rover = new Rover(1, 2, "N");
+        rover.getPlateauCoordinates(plateau);
         rover.readInstructions("RRM");
         int coordinates[] = rover.getCoordinates();
         String roverDirection = rover.getDirection();
@@ -117,6 +143,7 @@ public class RoverTest {
     @Test
     public void giveRoverMultipleInstructions(){
         Rover rover = new Rover(1, 2, "N");
+        rover.getPlateauCoordinates(plateau);
         rover.readInstructions("LMLMLMLMM");
         int coordinates[] = rover.getCoordinates();
         String roverDirection = rover.getDirection();
@@ -126,11 +153,13 @@ public class RoverTest {
     }
 
     @Test
-    public void giveRoverMultipleInstructionsAndGetFinalOutput(){
+    public void shouldReturnFinalPositionOfRover(){
         Rover rover = new Rover(2, 3, "W");
-        rover.readInstructions("RMMLMRMM");
-        String finalOutput = rover.getFinalOutput();
-        assertThat(finalOutput, is("1 7 N"));
+        rover.getPlateauCoordinates(plateau);
+        rover.readInstructions("RMMLMR");
+        String finalOutput = rover.giveFinalPositionOfRover();
+        assertThat(finalOutput, is("1 5 N"));
     }
+
 
 }
