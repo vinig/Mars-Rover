@@ -1,15 +1,21 @@
 package marsrover;
 
+import java.util.HashMap;
+
 public class Rover {
     private int[] coordinates = new int[2];
     private String direction;
     private int[] upperBoundCoordinatesOfPlateau = new int[2];
     private int[] lowerBoundCoordinatesOfPlateau = new int[2];
 
+    private HashMap<String, String> DIRECTION_MAP_LEFT;
+    private HashMap<String, String > DIRECTION_MAP_RIGHT;
+
     public Rover(int x_coordinate, int y_coordinate, String direction) {
         this.coordinates[0] = x_coordinate;
         this.coordinates[1] = y_coordinate;
         this.direction = direction;
+        createHashMap();
     }
 
     public int[] getCoordinates(){
@@ -23,6 +29,21 @@ public class Rover {
 
     private void changeDirection(String newDirection) {
         this.direction = newDirection;
+    }
+
+    private void createHashMap(){
+        DIRECTION_MAP_LEFT = new HashMap<String, String>();
+        DIRECTION_MAP_RIGHT = new HashMap<String, String>();
+
+        DIRECTION_MAP_LEFT.put("N","W");
+        DIRECTION_MAP_LEFT.put("W","S");
+        DIRECTION_MAP_LEFT.put("S","E");
+        DIRECTION_MAP_LEFT.put("E","N");
+
+        DIRECTION_MAP_RIGHT.put("W","N");
+        DIRECTION_MAP_RIGHT.put("N","E");
+        DIRECTION_MAP_RIGHT.put("E","S");
+        DIRECTION_MAP_RIGHT.put("S","W");
     }
 
     public void readInstructions(String instructions) {
@@ -44,41 +65,11 @@ public class Rover {
 
 
     public void turnLeft() {
-        if (getDirection().equals("N")){
-            changeDirection("W");
-            return;
-        }
-        if (getDirection().equals("W")){
-            changeDirection("S");
-            return;
-        }
-        if (getDirection().equals("S")){
-            changeDirection("E");
-            return;
-        }
-        if (getDirection().equals("E")){
-            changeDirection("N");
-            return;
-        }
+        changeDirection(DIRECTION_MAP_LEFT.get(getDirection()));
     }
 
     public void turnRight() {
-        if (getDirection().equals("N")){
-            changeDirection("E");
-            return;
-        }
-        if (getDirection().equals("E")){
-            changeDirection("S");
-            return;
-        }
-        if (getDirection().equals("S")){
-            changeDirection("W");
-            return;
-        }
-        if (getDirection().equals("W")){
-            changeDirection("N");
-            return;
-        }
+         changeDirection(DIRECTION_MAP_RIGHT.get(getDirection()));
     }
 
     public void jumpStep() {
